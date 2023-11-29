@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AddStudent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp"
+            android:background="@drawable/rounded_border">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thông tin sinh viên"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="50dp"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_border"
+                android:hint="Tên sinh viên"
+                android:inputType="text"
+                android:padding="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/edtBirth"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_border"
+                    android:hint="Ngày sinh"
+                    android:inputType="date"
+                    android:layout_marginBottom="10dp"
+                    android:enabled="false"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:layout_weight="@integer/material_motion_duration_long_1"
+                    android:padding="16dp"/>
+                <ImageView
+                    android:id="@+id/btnBirth"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/baseline_calendar_month_24"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giới tính"
+                android:textSize="20sp"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/femaleCb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_marginRight="20dp"
+                    android:text="Nữ"/>
+                <RadioButton
+                    android:id="@+id/maleCb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="Nam"/>
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/edtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_border"
+                android:hint="Địa chỉ"
+                android:inputType="text"
+                android:layout_marginBottom="10dp"
+                android:padding="16dp"/>
+            <EditText
+                android:id="@+id/edtCitizenID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_border"
+                android:hint="Số căn cước"
+                android:inputType="number"
+                android:layout_marginBottom="10dp"
+                android:padding="16dp"/>
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lưu"
+                android:layout_marginTop="30dp"
+                android:padding="20dp"
+                android:backgroundTint="@color/blue"/>
+
+            <TextView
+                android:id="@+id/tvCancle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_border"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="Hủy"/>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>

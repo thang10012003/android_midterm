@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "627387193706",
+    "project_id": "appmidterm-35ec0",
+    "storage_bucket": "appmidterm-35ec0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627387193706:android:bb821960a0c3c1adb66d13",
+        "android_client_info": {
+          "package_name": "vn.edu.tdtu.managestudent"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9tBSeKZLIt1o0D1dgd7dr4IEwmhL9748"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
